@@ -17,7 +17,7 @@ export const AdminDashboard: React.FC = () => {
     setIsSeedingData(true);
     
     try {
-      const response = await fetch('http://localhost:5000/api/seed', {
+      const response = await fetch('https://leaderboard-ir1w.onrender.com/api/seed', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },

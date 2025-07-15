@@ -35,7 +35,7 @@ export const PlayerManagement: React.FC = () => {
 
   const fetchPlayers = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/leaderboard', {
+      const response = await fetch('https://leaderboard-ir1w.onrender.com/api/leaderboard', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },

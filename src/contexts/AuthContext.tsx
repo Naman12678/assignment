@@ -32,7 +32,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [token, setToken] = useState<string | null>(localStorage.getItem('token'));
   const [isLoading, setIsLoading] = useState(true);
 
-  const API_BASE = 'http://localhost:5000/api';
+  const API_BASE = 'https://leaderboard-ir1w.onrender.com/api';
 
   useEffect(() => {
     if (token) {
